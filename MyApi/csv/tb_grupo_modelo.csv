@@ -1,0 +1,23 @@
+ciudad,distrito,modelo
+Madrid,Salamanca,modelo_1.pkl
+Madrid,Retiro,modelo_1.pkl
+Madrid,Chamberí,modelo_2.pkl
+Madrid,Chamartín,modelo_2.pkl
+Madrid,Centro,modelo_3.pkl
+Madrid,Moncloa-Aravaca,modelo_4.pkl
+Madrid,Fuencarral-El Pardo,modelo_4.pkl
+Madrid,Tetuán,modelo_5.pkl
+Madrid,Hortaleza,modelo_6.pkl
+Madrid,Ciudad Lineal,modelo_6.pkl
+Madrid,Barajas,modelo_7.pkl
+Madrid,San Blas-Canillejas,modelo_7.pkl
+Madrid,Latina,modelo_7.pkl
+Madrid,Carabanchel,modelo_8.pkl
+Madrid,Arganzuela,modelo_9.pkl
+Madrid,Vicálvaro,modelo_10.pkl
+Madrid,Usera,modelo_10.pkl
+Madrid,Moratalaz,modelo_10.pkl
+Madrid,Puente de Vallecas,modelo_10.pkl
+Madrid,Villaverde,modelo_10.pkl
+Alcalá de Henares,Alcalá de Henares,modelo_11.pkl
+Móstoles,Móstoles,modelo_12.pkl
