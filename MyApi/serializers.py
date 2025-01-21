@@ -6,6 +6,7 @@ class PredictionInputSerializer(serializers.Serializer):
     ciudad = serializers.CharField()
     distrito = serializers.CharField()
     barrio = serializers.CharField()
+    calle = serializers.CharField()
     tipo_vivienda = serializers.CharField()
     m2 = serializers.FloatField()
     num_habitaciones = serializers.IntegerField()
