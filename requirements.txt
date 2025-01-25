@@ -51,6 +51,5 @@ tzdata==2024.2
 urllib3==2.2.3
 watchdog==6.0.0
 dj-database-url
-psycopg2
 gunicorn
 whitenoise
