@@ -37,11 +37,11 @@ class PredictionModel:
         df_calles = load_csv("tb_todo_precio_m2.csv")
         df_modelos = load_csv("tb_grupo_modelo.csv") 
         
-        
         # Obtener valores de distrito, barrio y calle
         distrito_val = df_ciudad[df_ciudad["distrito"] == distrito]["precio_m2_distrito"].values[0]
         barrio_val = df_disbar[df_disbar["barrio"] == barrio]["precio_m2_barrio"].values[0]
         calle_val = df_calles[df_calles["calle"] == calle]["precio_m2_calle"].values[0]
+
         # Determinar el modelo a usar basado en la ciudad y el distrito
         modelo_fila = df_modelos[(df_modelos["ciudad"] == ciudad) & (df_modelos["distrito"] == distrito)]
         if not modelo_fila.empty:
@@ -93,6 +93,7 @@ class PredictionModel:
                 "precio_maximo": np.round(predicciones_top, 2),
             }
         else:
+            # Aquí no usamos scikit-learn, solo joblib para cargar el modelo entrenado previamente
             model = joblib.load(model_path)
             predicciones = model.predict(X)
             corrector = 0.10
