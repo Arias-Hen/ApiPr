@@ -3,5 +3,4 @@ djangorestframework==3.15.2
 joblib==1.4.2 --only-binary :all:
 pandas==2.2.3 --only-binary :all:
 psycopg2-binary~=2.9.3
-scikit-learn --only-binary :all:
 whitenoise==6.8.2
