@@ -1,14 +1,12 @@
 {
-    "builds": [{
-        "src": "ApiIgnite/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.2" }
-    }],
-    "routes":[
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "ApiIgnite/wsgi.py"
+            "source": "/static/(.*)",
+            "destination": "/static/$1"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "ApiIgnite/wsgi.py"
         }
     ]
 }
-
