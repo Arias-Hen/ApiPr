@@ -16,3 +16,4 @@ sqlparse
 tzdata
 whitenoise
 openpyxl
+gunicorn==20.1.0
